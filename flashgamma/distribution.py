@@ -147,7 +147,7 @@ class Distribution(object):
             new_resolution = reference_distribution.resolution
             scale = 1
         else:
-            scale = new_resolution / reference_distribution.resolution
+            scale = int(new_resolution / reference_distribution.resolution)
 
         # Generate new positions by scaling the positions given in
         # reference_distribution
